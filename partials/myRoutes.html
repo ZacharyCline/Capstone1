@@ -1,0 +1,32 @@
+          <h1>My Routes</h1>
+                    <div ng-repeat="item in routes | filter:searchText.search">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="col-md-4" ng-click="getDestinations(item.Destination)">{{item.Title}}</div>
+                <div class="col-md-2">Start: {{item.Start}}</div>
+                <div class="col-md-2">Destination: {{item.Destination}}</div>
+                <div class="col-xs-1"><button class="btn btn-danger">X</button></div>
+              </div>
+            </div>
+          </div>
+
+        
+<!--         <div ng-repeat="item in routes | filter:searchText.search">
+          <div class="row">
+            <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
+            <div class="card-block">
+              <h4 class="card-title"><a ng-href="#/items/{{item.id}}">{{item.Title}}"</a></h4>
+              <p class="card-text">
+                  <div>Start:{{item.Start}}</div>
+                  <div>Destination:{{item.Destination}}</div>
+                  How:<div class="col-xs-4">{{item.Rider}} {{item.Driver}}</div>            
+              </p>
+              <button class="btn btn-danger">X</button>
+              <button ng-click="getDestinations(item.Destination)">See Matches</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->

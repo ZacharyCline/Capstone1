@@ -1,0 +1,18 @@
+<h1>Matched Routes</h1>
+
+
+        
+        <div ng-repeat="item in Routes | filter:searchText.search">
+          <div class="col-xs-12 col-md-4">
+            <div class="card-block">
+<!--               <h4 class="card-title"><a ng-href="#/items/{{item.id}}">{{item.Title}}"</a></h4>
+ -->              <p class="card-text">
+                  <div>Start:{{item.Start}}</div>
+                  <div>Destination:{{item.Destination}}</div>
+         
+              </p>
+            </div>
+          </div>
+        </div>
+
+ 

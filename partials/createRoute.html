@@ -1,0 +1,49 @@
+<div>
+	<h1>Create Your Swoop Route</h1>
+<!--         <input id="from" type="text" ng-model="user.from" placeholder="Type Address" class="ng-pristine ng-valid" autocomplete="off">
+        <input type="hidden" ng-model="user.fromLat">
+        <input type="hidden" ng-model="user.fromLng">
+            <p>{{user.from}} <br> {{'Latitude : ' + user.fromLat + ', Longitutde : ' + user.fromLng}}</p>
+    </div> -->
+
+	<form>
+		Title:<input type="text" placeholder="Name This Route!" ng-model="routeObj.Title">
+		Start:<input type="text" placeholder="Starting address" ng-model="routeObj.Start">
+		End:<input type="text" placeholder="Where Are you going?" ng-model="routeObj.Destination">
+	</form>
+
+	<form>
+<!-- 		<input type="checkbox" name="days" ng-model="routeObj.M">M<br>
+		<input type="checkbox" name="days" ng-model="routeObj.T">T<br>
+		<input type="checkbox" name="days" ng-model="routeObj.W">W<br>
+		<input type="checkbox" name="days" ng-model="routeObj.Th">Th<br>
+		<input type="checkbox" name="days" ng-model="routeObj.F">F<br>
+		<input type="checkbox" name="days" ng-model="routeObj.S">S<br>
+		<input type="checkbox" name="days" ng-model="routeObj.Su">Su<br>
+ -->
+		<!-- <select>
+			<option value = "N">N</option>
+			<option value = "NNE">NNE</option>
+			<option value = "NE">NE</option>
+			<option value = "ENE">ENE</option>
+			<option value = "E">E</option>
+			<option value = "ESE">ESE</option>
+			<option value = "SE">SE</option>
+			<option value = "SSE">SSE</option>
+			<option value = "S">S</option>
+			<option value = "SSW">SSW</option>
+			<option value = "SW">SW</option>
+			<option value = "SW">SW</option>
+			<option value = "WSW">WSW</option>
+			<option value = "W">W</option>
+			<option value = "WNW">WNW</option>
+			<option value = "NW">NW</option>
+			<option value = "NNW">NNW</option>
+		</select> -->
+
+
+		Rider:<input type="checkbox" name="R||D" ng-model="routeObj.Rider" ng-true-value="'Get A Ride For This Route/'" ng-false-value="''">
+		Driver:<input type="checkbox" name="R||D" ng-model="routeObj.Driver" ng-true-value="'Drive This Route'" ng-false-value="''">
+		<button ng-click="addNewRoute()">Create Route!</button>
+	</form>
+</div>
